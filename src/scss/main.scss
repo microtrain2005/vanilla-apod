@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  main {
+    width: 720px;
+    margin: 0 auto;
+  }
+  
+  #apodImg {
+    max-width: 100%
+  }
+  
+  div[id^=apod] {
+    padding: .6rem 0;
+    font-size: 20px;
+  }
+  
+  /* https://alistapart.com/article/creating-intrinsic-ratios-for-video */
+  /* 9/16 = 56.2 */
+  #apodVideo {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+  }
+  
+  iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+/* USE IF CLASS BUTTON
+  .button {
+  background-color: rgb(114, 76, 175);
+  border: 1px solid rgb(240, 13, 172);
+  border-radius: 10px;
+  color: white;
+  } */
+
+  #btnRandApod {
+    background-color: rgb(25, 55, 138);
+    border: 1px solid rgb(120, 158, 214);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+    
+  #btnRandApod:hover {
+    background-color: #71129c;
+  }
+
+  #btnRandom:active {
+    background-color: #fc3d21;
+  }
+  
